@@ -1,0 +1,5 @@
+build/
+**.gdb_history
+**.vscode/
+**.idea/
+**cmake-build-debug/
