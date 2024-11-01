@@ -430,5 +430,6 @@ extern "C" auto __jsovon_internal_get_json_type(void *json_ptr) -> JsonDataBaseT
 
 const JsonNull __INTERNAL_JSON_NULL;
 export const Json JSON_NULL(&__INTERNAL_JSON_NULL);
+export const Json null(&__INTERNAL_JSON_NULL);
 
 };

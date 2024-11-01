@@ -46,8 +46,8 @@ test = true;
 bool f = test;
 
 /* null */
-test = jsovon::JSON_NULL;
-if (test == jsovon::JSON_NULL) { /* true here */
+test = jsovon::null;
+if (test == jsovon::null) { /* true here */
     std::cout << "Hello world!" << std::endl;
 }
 ```
@@ -64,7 +64,7 @@ object = {
     { "key4", 1213.1415 },
     { "key5", "1617181920" },
     { "key6", true },
-    { "key7", jsovon::JSON_NULL }
+    { "key7", jsovon::null }
 };
 
 object["key8"] = object;
@@ -104,7 +104,7 @@ array.append(true);
 bool f = array[5];
 
 /* null */
-array.append(jsovon::JSON_NULL);
+array.append(jsovon::null);
 jsovon::Json g = array[6];
 ```
 
@@ -120,7 +120,7 @@ jsovon::Json object = {
     { "key4", 1213.1415 },
     { "key5", "1617181920" },
     { "key6", true },
-    { "key7", jsovon::JSON_NULL }
+    { "key7", jsovon::null }
 };
 
 std::cout << object << std::endl;

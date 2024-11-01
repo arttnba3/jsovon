@@ -56,8 +56,8 @@ auto functionality_test(void) -> void
     val6 = arr[2];
     std::cout << "arr[2]: " << arr[2] << " " << val6 << std::endl;
 
-    arr.append(jsovon::JSON_NULL);
-    std::cout << "arr[3] compared to JSON_NULL: " << (arr[3] == jsovon::JSON_NULL) << std::endl;
+    arr.append(jsovon::null);
+    std::cout << "arr[3] compared to jsovon::null is " << (arr[3] == jsovon::null) << std::endl;
 
     arr.append(arr);
     arr.append(&arr);
@@ -65,7 +65,7 @@ auto functionality_test(void) -> void
     std::cout << "arr: " << arr << std::endl;
 
     std::vector<jsovon::Json> jvec = {
-        123, -456, 789.1011F, 1213.1415, "1617181920", true, jsovon::JSON_NULL
+        123, -456, 789.1011F, 1213.1415, "1617181920", true, jsovon::null
     };
     jsovon::Json arr2 = jvec;
 
@@ -97,8 +97,8 @@ auto functionality_test(void) -> void
     val6 = obj["2"];
     std::cout << "obj[\"2\"]: " << obj["2"] << " " << val6 << std::endl;
 
-    obj["3"] = jsovon::JSON_NULL;
-    std::cout << "obj[3] compared to JSON_NULL: " << (obj["3"] != jsovon::JSON_NULL) << std::endl;
+    obj["3"] = jsovon::null;
+    std::cout << "obj[3] not compared to jsovon::null is " << (obj["3"] != jsovon::null) << std::endl;
 
     std::cout << "obj: " << obj << std::endl;
 
