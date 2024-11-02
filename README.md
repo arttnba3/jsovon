@@ -11,7 +11,7 @@ Another lightweight C++ JSON library, provided simply as a `C++ module`.
 To use the `JsOvOn` library, all we only need to do is to `"do the import"`:
 
 ```cpp
-import jsovon
+import jsovon;
 ```
 
 Don't forget to add the source code of `JsOvOn` to your project and link the `JsOvOn` library into your `CMakeLists.txt`.
