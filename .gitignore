@@ -1,4 +1,5 @@
 build/
+release/
 **.gdb_history
 **.vscode/
 **.idea/
