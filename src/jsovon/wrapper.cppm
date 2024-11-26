@@ -79,6 +79,8 @@ public:
     auto str(void) const -> std::string;
     auto str_loop(std::uint64_t layer) const -> std::string;
 
+    auto size(void) const -> std::size_t;
+
     auto GetType(void) -> JsonDataBaseType;
 
     auto BeNull(void) -> void;
@@ -381,6 +383,11 @@ auto Json::str(void) const -> std::string
 auto Json::str_loop(std::uint64_t layer) const -> std::string
 {
     return this->data->str_loop(layer);
+}
+
+auto Json::size(void) const -> std::size_t
+{
+    return this->data->size();
 }
 
 auto Json::GetType(void) -> JsonDataBaseType

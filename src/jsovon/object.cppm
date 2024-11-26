@@ -24,6 +24,8 @@ public:
 
     virtual auto str(void) const -> std::string;
     virtual auto str_loop(std::uint64_t layer) const -> std::string;
+    
+    virtual auto size(void) const -> std::size_t;
 
 private:
     std::unordered_map<std::string, void*> map;
@@ -124,6 +126,11 @@ loop_end:
     res += "}";
 
     return res;
+}
+
+auto JsonObject::size(void) const -> std::size_t
+{
+    return this->map.size();
 }
 
 };

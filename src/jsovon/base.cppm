@@ -81,6 +81,8 @@ public:
     virtual auto append(void *orig_json) -> void;
     virtual auto append(std::string key, void *orig_json) -> void;
 
+    virtual auto size(void) const -> std::size_t;
+
     virtual auto GetInternalArray(void) const -> const std::vector<void*>&;
     virtual auto GetInternalMap(void) const -> const std::unordered_map<std::string, void*>&;
 
@@ -326,6 +328,13 @@ auto JsonDataBase::append(std::string key, void *orig_json) -> void
 {
     throw OperationNotAllowError(
         std::format("Json type \"{}\" could not provide append(key, json) function!", json_type_str[this->type])
+    );
+}
+
+auto JsonDataBase::size(void) const -> std::size_t
+{
+    throw OperationNotAllowError(
+        std::format("Json type \"{}\" could not provide size(void) function!", json_type_str[this->type])
     );
 }
 

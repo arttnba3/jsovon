@@ -28,6 +28,8 @@ public:
     virtual auto str(void) const -> std::string;
     virtual auto str_loop(std::uint64_t layer) const -> std::string;
 
+    virtual auto size(void) const -> std::size_t;
+
 private:
     std::vector<void*> array;
     virtual auto InternalClone(const JsonDataBase &orig) -> void;
@@ -119,6 +121,11 @@ loop_end:
     res += "]";
 
     return res;
+}
+
+auto JsonArray::size(void) const -> std::size_t
+{
+    return this->array.size();
 }
 
 }

@@ -35,14 +35,17 @@ auto functionality_test(void) -> void
     arr.append(123);
     val1 = arr[0];
     std::cout << "arr[0]: " << arr[0] << " " << val1 << std::endl;
+    std::cout << "Size: " << arr.size() << std::endl;
 
     arr.append(-456);
     val1 = arr[1];
     std::cout << "arr[1]: " << arr[1] << " " << val2 << std::endl;
+    std::cout << "Size: " << arr.size() << std::endl;
 
     arr.append(789.1011F);
     val2 = arr[2];
     std::cout << "arr[2]: " << arr[2] << " " << val3 << std::endl;
+    std::cout << "Size: " << arr.size() << std::endl;
 
     arr[0] = 1213.1415;
     val4 = arr[0];
@@ -76,14 +79,17 @@ auto functionality_test(void) -> void
     obj["0"] = 123;
     val1 = obj["0"];
     std::cout << "obj[\"0\"]: " << obj["0"] << " " << val1 << std::endl;
+    std::cout << "Size: " << obj.size() << std::endl;
 
     obj["1"] = -456;
     val2 = obj["1"];
     std::cout << "obj[\"1\"]: " << obj["1"] << " " << val2 << std::endl;
+    std::cout << "Size: " << obj.size() << std::endl;
 
     obj["2"] = 789.1011F;
     val3 = obj["2"];
     std::cout << "obj[\"2\"]: " << obj["2"] << " " << val3 << std::endl;
+    std::cout << "Size: " << obj.size() << std::endl;
 
     obj["0"] = 1213.1415;
     val4 = obj["0"];
