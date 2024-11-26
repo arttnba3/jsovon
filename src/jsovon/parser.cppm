@@ -206,9 +206,11 @@ arr_elem_parse_start:
     case TOKEN_LBRACE:
         this->scanner.PushToken(token);
         val = this->ParseObject();
+        break;
     case TOKEN_LBRACKET:
         this->scanner.PushToken(token);
         val = this->ParseArray();
+        break;
     default:
         throw ParseError(
             std::format("Unexpected ident \"{}\" at line {}, column {}", token.orig_str, token.line, token.off)
