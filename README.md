@@ -1,8 +1,18 @@
+<div align="center">
+
+<a href="https://s2.loli.net/2024/11/01/uMOI5ctdaTNCb9R.png" target="_blank"><img src="https://s2.loli.net/2024/11/01/uMOI5ctdaTNCb9R.png"></a>
+
 # JsOvOn
 
-![JsOvOn!](https://s2.loli.net/2024/11/01/uMOI5ctdaTNCb9R.png)
-
 Another lightweight C++ JSON library, provided simply as a `C++ module`.
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/C%2B%2B20-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"> <img src="https://img.shields.io/github/license/arttnba3/JsOvOn?style=for-the-badge" alt="license">
+
+</p>
+
+</div>
 
 ## Usage
 
@@ -18,7 +28,7 @@ Don't forget to add the source code of `JsOvOn` to your project and link the `Js
 
 You can refer to `src/test.cpp` and `src/CMakeLists.txt` to see how to import and use this library.
 
-> Currently you may need to enable CMake's support for `import std` manually, as it's still an experimental feature.
+> Currently you may need to enable CMake's support for `import std` manually, as it's still an experimental feature for some compilers like `clang++`.
 
 ### Use class `Json`
 
@@ -155,7 +165,8 @@ jsovon::Json test = ParseJsonFile("test.json");
 
 ## Author
 
-arttnba3 <arttnba3@outlook.com>
+- Code: arttnba3 <arttnba3@outlook.com>
+- Illustration: Sumi Kiriko <kirikosumi@gmail.com>
 
 ## License
 
